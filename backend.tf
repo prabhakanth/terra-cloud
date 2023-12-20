@@ -1,9 +1,7 @@
 terraform {
-  backend "s3"{
-  bucket = "remotebackend-with-dynamodb-prabhakanth-bucket"
-  key = "remote.tfstate"
-  region = "us-east-1"
-  dynamodb_table = "remote-statelocking"
-  encrypt = true
+  backend s3{
+    bucket = "terra-cloud-jenkins"
+    key = "remote.tfstate"
+    region = "us-east-1"
   }
 }
