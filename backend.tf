@@ -1,6 +1,6 @@
 terraform {
-  backend "s3"{
-  bucket = "remotebackend-with-dynamodb"
+  backend "s3" {
+  bucket = "remotebackend-with-dynamodb-prabhu-bucket"
   key = "global/backend/terraform.tfstate"
   region = "us-east-1"
   dynamodb_table = "remote-statelocking"
