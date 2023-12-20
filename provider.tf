@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "aws" {
-    access_key = var.aws_access_key
+    access_key = AKIA46DYQGRVER7VSMWB
     region     = us-east-1
-    secret_key = var.aws_secret_key
+    secret_key = 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
 }
 
 resource "aws_s3_bucket" "lambda_bucket" {
